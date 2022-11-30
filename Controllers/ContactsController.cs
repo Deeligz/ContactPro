@@ -40,7 +40,7 @@ namespace ContactPro.Controllers
 
         // GET: Contacts
         [Authorize]
-        public IActionResult Index(int categoryId, string swalMessage = null)
+        public IActionResult Index(int categoryId, string? swalMessage = null)
         {
             ViewData["SwalMessage"] = swalMessage;
             var contacts = new List<Contact>();
